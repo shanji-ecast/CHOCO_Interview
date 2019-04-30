@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">DramaInfo</string>
+
+    <string name="hint_search">輸入戲劇名稱</string>
+    <string name="hint_drama_empty">查無戲劇資料</string>
+
+    <string name="title_created_at">出版日期: %s</string>
+    <string name="title_rating">評分: %1$.2f</string>
+    <string name="title_total_views">觀看次數: %d</string>
+    <string name="asset_statements" translatable="false">[{ \"include\": \"https://www.example.com/.well-known/assetlinks.json\" }]</string>
+</resources>

@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "android.interview.drama",
+    "sha256_cert_fingerprints":
+    ["72:AD:33:45:A3:83:59:A4:10:0D:2B:87:01:60:DC:88:D7:63:56:35:F3:49:63:5D:1C:7B:2B:73:88:0A:50:75"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://www.example.com"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "android.interview.drama",
+    "sha256_cert_fingerprints":
+    ["72:AD:33:45:A3:83:59:A4:10:0D:2B:87:01:60:DC:88:D7:63:56:35:F3:49:63:5D:1C:7B:2B:73:88:0A:50:75"]
+  }
+}]
