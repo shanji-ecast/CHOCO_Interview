@@ -52,17 +52,6 @@ public class DramaListFragment extends Fragment implements DataManager.RequestLi
         mDataManager = new DataManager(getActivity(), this);
         mDataManager.requestDramaList();
         mDataManager.requestNewestDataList();
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        Utils.saveLastQuery(getContext(), mSearchView.getQuery().toString());
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
 
         String keyword = Utils.getLastQuery(getContext());
         if (!TextUtils.isEmpty(keyword)) {
@@ -71,6 +60,12 @@ public class DramaListFragment extends Fragment implements DataManager.RequestLi
             mSearchView.setQuery(keyword, true);
             mSearchView.clearFocus();
         }
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Utils.saveLastQuery(getContext(), mSearchView.getQuery().toString());
     }
 
     private void initRecycleView(View rootView) {
